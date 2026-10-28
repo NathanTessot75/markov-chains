@@ -1,47 +1,49 @@
 # Markov Explorer
 
-**Visualisez et manipulez des chaînes de Markov en temps réel.**
+**Build, simulate and play with Markov chains in real time.**
 
-Markov Explorer est un outil interactif pour explorer les chaînes de Markov à travers deux modes : un **bac à sable** libre pour construire et simuler n'importe quel graphe de transitions, et un **mode niveaux** avec des puzzles progressifs à résoudre.
+Markov Explorer is an interactive tool for exploring discrete-time Markov chains through two modes: a free **sandbox** to build and simulate any transition graph, and a **levels** mode with progressive puzzles to solve. It accompanies a co-authored mathematical paper on Markov chains (PSL University, January 2026) covering stationary distributions, the Perron–Frobenius theorem, convergence and hidden Markov models.
 
 ---
 
 ## Modes
 
 ### Sandbox
-Construisez librement votre chaîne de Markov :
-- Ajoutez et déplacez des états sur un canvas SVG
-- Définissez les probabilités de transition entre chaque paire d'états
-- Lancez une simulation pas-à-pas ou en continu
-- Visualisez la distribution stationnaire calculée en temps réel
+Build your own Markov chain:
+- Add and move states on an SVG canvas
+- Set the transition probabilities between each pair of states
+- Run the simulation step by step or continuously
+- See the stationary distribution computed in real time
 
-### Mode Niveaux
-Résolvez des puzzles basés sur la théorie des chaînes de Markov :
+### Levels
+Solve puzzles based on Markov chain theory:
 
-| # | Titre | Concept | Difficulté |
+| # | Title | Concept | Difficulty |
 |---|-------|---------|------------|
-| 1 | Tour du Monde | Cycle déterministe | Facile |
-| 2 | Le Puits | État absorbant | Moyen |
-| 3 | La Hiérarchie | Distribution stationnaire contrôlée | Difficile |
-| 4 | Le Touriste | Temps de passage | Moyen |
+| 1 | World Tour | Deterministic cycle | Easy |
+| 2 | The Well | Absorbing state | Medium |
+| 3 | The Hierarchy | Controlled stationary distribution | Hard |
+| 4 | The Tourist | Hitting time | Medium |
 
-Chaque niveau a un objectif précis (ex : "faites en sorte que l'état C soit absorbant") et vérifie automatiquement si la solution est valide.
-
----
-
-## Fonctionnalités techniques
-
-- **Canvas SVG interactif** — nœuds déplaçables, zoom, pan
-- **Calcul de la distribution stationnaire** — résolution numérique de πP = π
-- **Simulation animée** — visualisation du chemin parcouru état par état
-- **Validation automatique** des objectifs de chaque niveau
-- **Zéro dépendance externe** — tout en un seul fichier HTML (React via CDN, Tailwind via CDN)
+Each level has a precise goal (for example, "make state C absorbing") and checks automatically whether your chain satisfies it.
 
 ---
 
-## Utilisation
+## Under the hood
 
-Aucune installation requise. Ouvrez simplement `index.html` dans un navigateur.
+- **Interactive SVG canvas**: draggable nodes, zoom and pan
+- **Stationary distribution**: numerical solution of πP = π
+- **Animated simulation**: the path followed state by state
+- **Automatic validation** of each level's goal
+- **No build step**: a single HTML file (React and Tailwind loaded from a CDN)
+
+The interface is in French.
+
+---
+
+## Usage
+
+No installation needed: open `index.html` in a browser.
 
 ```bash
 git clone https://github.com/NathanTessot75/markov-chains.git
@@ -51,15 +53,15 @@ open index.html
 
 ---
 
-## Concepts couverts
+## Concepts covered
 
-- Chaînes de Markov à temps discret
-- Matrices de transition stochastiques (lignes normalisées à 1)
-- Distribution stationnaire (vecteur propre gauche pour λ=1)
-- États absorbants, cycles, ergodicité
+- Discrete-time Markov chains
+- Stochastic transition matrices (rows summing to 1)
+- Stationary distribution (left eigenvector for λ = 1)
+- Absorbing states, cycles, ergodicity
 
 ---
 
-## Licence
+## License
 
-© 2026 Nathan Tessot — Tous droits réservés.
+© 2026 Nathan Tessot. All rights reserved.
