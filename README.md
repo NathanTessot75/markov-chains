@@ -2,11 +2,16 @@
 
 **Build, simulate and play with Markov chains in real time.**
 
-Markov Explorer is an interactive tool for exploring discrete-time Markov chains through two modes: a free **sandbox** to build and simulate any transition graph, and a **levels** mode with progressive puzzles to solve. It accompanies a co-authored mathematical paper on Markov chains (PSL University, January 2026) covering stationary distributions, the Perron–Frobenius theorem, convergence and hidden Markov models.
+▶️ **[Try it online](https://nathantessot75.github.io/markov-chains/)**
+
+Markov Explorer is an interactive tool for learning discrete-time Markov chains through three modes: short **lessons**, **challenges** with progressive puzzles to solve, and a free **sandbox** to build and simulate any transition graph. It accompanies a co-authored mathematical paper on Markov chains (PSL University, January 2026) covering stationary distributions, the Perron–Frobenius theorem, convergence and hidden Markov models.
 
 ---
 
 ## Modes
+
+### Learn
+Four interactive lessons: what a Markov chain is, the transition matrix, convergence and the stationary distribution, and hidden Markov models.
 
 ### Sandbox
 Build your own Markov chain:
@@ -15,7 +20,7 @@ Build your own Markov chain:
 - Run the simulation step by step or continuously
 - See the stationary distribution computed in real time
 
-### Levels
+### Challenges
 Solve puzzles based on Markov chain theory:
 
 | # | Title | Concept | Difficulty |
@@ -43,7 +48,7 @@ The interface is in French.
 
 ## Usage
 
-No installation needed: open `index.html` in a browser.
+Use it online at **[nathantessot75.github.io/markov-chains](https://nathantessot75.github.io/markov-chains/)**, or open `index.html` locally: no installation needed.
 
 ```bash
 git clone https://github.com/NathanTessot75/markov-chains.git
